@@ -15,30 +15,17 @@ Sensor & Block Information
 
 ![Live Classification](https://hackster.imgix.net/uploads/attachments/1454163/screenshot_20220607-232109_chrome_IxyBJTYaWK.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-We had captured images of resistors, IC, and LED using Android mobile. The Labeled images are dataset for Training and Testing. We use 80% - 20% of the data for training and testing the model. 
+We had captured 300 images of resistors, IC, and LED each of size 160x160 using Android mobile. The Labeled images are dataset for Training and Testing. We use 80% - 20% of the data for training and testing the model. We create an Impulse on the Edge impulse platfrom to generate features.
 
 ![Create impulse](https://hackster.imgix.net/uploads/attachments/1454201/ss12_m4LS4Oqcx4.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-Next, we generate features by clicking the Generate Features button. This takes a few seconds to generate the features. Feature explorer explains the relation between the three features ( IC, Led, Resistor).
-
-
-We set the parameters as shown below. Once the Training settings, click on the Training button to start training the model.
-
-
-We can see the training output once the training is done. The training output explains the confusion matrix, Inferencing time, RAM usage, and Flash usage. The confusing matrix has TP, TN, FP, and FN for the features (LED, Resistor, and IC).
+With the generated features, we create an object detection model. We can see the training output once the training is done. The training output explains the confusion matrix, Inferencing time, RAM usage, and Flash usage. The confusing matrix has TP, TN, FP, and FN for the features (LED, Resistor, and IC). From the training output, we can find the F1 score as 96.7% for the quantized (int8) model which is a decent output of an object detection model. The Flash usage is 77.6K which can be deployed to an edge device easily.
 
 ![Training output](https://hackster.imgix.net/uploads/attachments/1454207/ss17_8LoB8ONYzR.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-From the above training output, we can find the F1 score as 96.7% for the quantized (int8) model which is a decent output of an object detection model. The Flash usage is 77.6K which can be deployed to an edge device easily.
-
-## Deploy
-Now let's deploy and test them on the phone. Click on the Deployment and click on connect to mobile phone tile. Scan the QR code shown using the scanner on the mobile camera.
-
-Once the classifier is loaded on the mobile, the inferencing is done on edge as shown below.
+We can loader the edge impulse classifier on the mobile, the inferencing is done on edge as shown below.
 
 ![Inference](https://hackster.imgix.net/uploads/attachments/1454210/screenshot_20220607-232017_chrome_GnU7KDCsIm.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
-
-
 ![Inference](https://hackster.imgix.net/uploads/attachments/1454213/screenshot_20220607-232109_chrome_DM5sWv1o38.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
 
 
