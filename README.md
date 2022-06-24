@@ -1,4 +1,4 @@
-# Edge Impulse FOMO 
+# FOMO Resistor, IC, and LED 160x160
 
 ![FOMO](https://hackster.imgix.net/uploads/attachments/1454152/_nskAWxaGUv.blob?auto=compress%2Cformat&w=900&h=675&fit=min)
 
