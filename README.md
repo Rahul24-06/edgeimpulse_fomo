@@ -1,7 +1,7 @@
 # FOMO Resistor, IC, and LED 160x160
 
 ![FOMO](https://hackster.imgix.net/uploads/attachments/1454152/_nskAWxaGUv.blob?auto=compress%2Cformat&w=900&h=675&fit=min)
-
+![Live Classification](https://hackster.imgix.net/uploads/attachments/1454163/screenshot_20220607-232109_chrome_IxyBJTYaWK.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
 
 ## Introduction
 Have you ever tried opening a circuit board and had no clue what it is? Well, I have got you a solution. With a mobile phone and edge impulse, you can run a trained object detection model to identify the electrical components (Resistor, Capacitors, IC, etc)
@@ -13,7 +13,7 @@ Sensor & Block Information
 * An image block to normalize the image data, and reduce the color depth to grayscale
 * FOMO transfer learning block-based on MobileNetV2 0.35
 
-![Live Classification](https://hackster.imgix.net/uploads/attachments/1454163/screenshot_20220607-232109_chrome_IxyBJTYaWK.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
+
 
 We had captured 300 images of resistors, IC, and LED each of size 160x160 using Android mobile. The Labeled images are dataset for Training and Testing. We use 80% - 20% of the data for training and testing the model. We create an Impulse on the Edge impulse platfrom to generate features.
 
