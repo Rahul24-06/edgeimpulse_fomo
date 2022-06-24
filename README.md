@@ -15,16 +15,7 @@ Sensor & Block Information
 
 ![Live Classification](https://hackster.imgix.net/uploads/attachments/1454163/screenshot_20220607-232109_chrome_IxyBJTYaWK.jpg?auto=compress%2Cformat&w=740&h=555&fit=max)
 
-
-To collect the data, we need to connect a device that can collect the images. For this project, we will be using Android mobile. Click on the Devices tab, and connect the mobile using the QR code.
-
-Now select the Label as IC, LED, and Resistors respectively, and click the Capture button to collect the image data.
-
-Now we had collected the dataset for Training and Testing. We use 80% of the data for training and the rest 20% of the data for testing the model.
-
-Now we have to label the data on the images as shown below.
-
-We correct the data collected to 80% train and 20% test split by moving the data from train to test dataset or vice-versa. In this example, we have got an 80% / 20% split here.
+We had captured images of resistors, IC, and LED using Android mobile. The Labeled images are dataset for Training and Testing. We use 80% - 20% of the data for training and testing the model. 
 
 ![Create impulse](https://hackster.imgix.net/uploads/attachments/1454201/ss12_m4LS4Oqcx4.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
